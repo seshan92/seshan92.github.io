@@ -31,9 +31,24 @@ TemplateMo 578 First Portfolio
 https://templatemo.com/tm-578-first-portfolio
 
 -->
+    <link rel='stylesheet' type='text/css' href='https://cdn-prod.securiti.ai/consent/cookie-consent.css' />
     </head>
     
     <body>
+        <!-- After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer. -->
+<script>
+(function () {
+	var s = document.createElement('script');
+	s.src = 'https://cdn-prod.securiti.ai/consent/cookie-consent-sdk.js';
+	s.setAttribute('data-tenant-uuid', '83f8b098-2d3c-4eb0-b8ac-642c18d26d3c');
+	s.setAttribute('data-domain-uuid', 'e74acd63-a390-4a87-8f27-d18b27951ac8');
+	s.setAttribute('data-backend-url', 'https://app.securiti.ai');
+	s.defer = true;
+	var parent_node = document.head || document.body;
+	parent_node.appendChild(s);
+	s.addEventListener('load', function() { window.initCmp(); });
+})()
+</script>
 
         <section class="preloader">
             <div class="spinner">
