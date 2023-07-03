@@ -33,20 +33,7 @@ https://templatemo.com/tm-578-first-portfolio
 -->
     <link rel='stylesheet' type='text/css' href='https://cdn-prod.securiti.ai/consent/cookie-consent.css' />
     </head>
-    
-                    <script src='https://cdn-prod.securiti.ai/consent/form-consent-sdk.js'></script>
-                    <script>
-                    window.addEventListener('load',
-                        FormConsentSDK.initialize({
-                            codeGenMetadata:{"formPropertyId":"1","formSelector":"[Email*=\"Email\"]","subjectIdentifiers":[{"name":"Name","selector":"Name","isPrimary":true}],"consentIdentifiers":[{"type":"checkbox","name":"Email","selector":"Email","propertyId":811,"consentValue":"checked"}],"consentTrigger":{"action":"submit","selector":""}},
-                            url: 'https://app.securiti.ai/privaci/v1/',
-                            authToken:'dc44fbdf-26d6-4b7c-b565-fcb82985bd8e',
-                            orgId:'1',
-                            onConsentSuccess: null,
-                            onConsentFailure: null
-                        })
-                    )</script>
-                    
+	
     <body>
         <!-- After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer. -->
 <script>
@@ -628,5 +615,18 @@ https://templatemo.com/tm-578-first-portfolio
         <script src="js/magnific-popup-options.js"></script>
         <script src="js/custom.js"></script>
 
+                    <script src='https://cdn-prod.securiti.ai/consent/form-consent-sdk.js'></script>
+                    <script>
+                    window.addEventListener('load',
+                        FormConsentSDK.initialize({
+                            codeGenMetadata:{"formPropertyId":"1","formSelector":"[Email*=\"Email\"]","subjectIdentifiers":[{"name":"Name","selector":"Name","isPrimary":true}],"consentIdentifiers":[{"type":"checkbox","name":"Email","selector":"Email","propertyId":811,"consentValue":"checked"}],"consentTrigger":{"action":"submit","selector":""}},
+                            url: 'https://app.securiti.ai/privaci/v1/',
+                            authToken:'dc44fbdf-26d6-4b7c-b565-fcb82985bd8e',
+                            orgId:'1',
+                            onConsentSuccess: null,
+                            onConsentFailure: null
+                        })
+                    )</script>
+                    
     </body>
 </html>
